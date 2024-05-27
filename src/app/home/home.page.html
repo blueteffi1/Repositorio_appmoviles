@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content class="ion-padding home-content">
+  <div class="home-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Bienvenido</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <h2>{{ user }}</h2>
+        <ion-text>
+          <h1>Información adicional</h1>
+        </ion-text>
+
+        <ion-item>
+          <ion-label position="stacked">Nombre</ion-label>
+          <ion-input [(ngModel)]="nombre" type="text"></ion-input>
+        </ion-item>
+        <ion-item >
+          <ion-label position="stacked">Apellido</ion-label>
+          <ion-input [(ngModel)]="apellido" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Nivel de educación</ion-label>
+          <ion-select [(ngModel)]="nivelEducacion">
+            <ion-select-option value="Preescolar">Preescolar</ion-select-option>
+            <ion-select-option value="Basica">Básica</ion-select-option>
+            <ion-select-option value="Media">Media</ion-select-option>
+            <ion-select-option value="Tecnico">Técnico</ion-select-option>
+            <ion-select-option value="Universitario">Universitario</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <mat-form-field>
+          <mat-label>Fecha de Nacimiento</mat-label>
+          <input matInput [matDatepicker]="picker" [(ngModel)]="fechaNacimiento">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <ion-button expand="block" color="light" (click)="clearInput('nombre'); clearInput('apellido')">Limpiar</ion-button>
+        <ion-button expand="block" color="primary" (click)="mostrar()">Mostrar</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+

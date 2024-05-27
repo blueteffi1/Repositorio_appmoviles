@@ -1,0 +1,32 @@
+
+ion-content {
+  --ion-padding-top: 50px; 
+  --ion-padding-bottom: 20px; 
+}
+
+
+.home-container {
+  max-width: 900px; 
+  margin: auto; 
+}
+
+
+ion-item {
+  margin-bottom: 20px; 
+}
+
+
+ion-button {
+  margin-top: 20px; 
+}
+
+.input-animation{
+  animation: sliideIn 1s 1;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+
+}
