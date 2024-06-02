@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TareasService } from 'src/app/tareas.service'; // Verifica la ruta
+import { TareasService } from 'src/app/tareas.service'; 
 
 @Component({
   selector: 'app-pendientes',
