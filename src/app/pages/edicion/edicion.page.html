@@ -1,0 +1,31 @@
+<ion-header [translucent]="true"></ion-header>
+<ion-toolbar class="toolbar-custom" style="margin-top: 0">
+  <ion-buttons slot="start">
+    <ion-menu-button auto-hide="false" style="color: rgb(223, 123, 165);"></ion-menu-button>
+  </ion-buttons>
+  <ion-title style="color: rgb(223, 123, 165);">
+    <ion-icon name="heart"></ion-icon>Creación/Edición Desk<ion-icon name="heart"></ion-icon>
+  </ion-title>  
+</ion-toolbar>
+
+
+<ion-content>
+  <div class="container">
+    <ion-card class="custom-item">
+      <ion-label position="stacked">Nueva Tarea</ion-label>
+      <ion-input type="text" [(ngModel)]="nuevaTarea"></ion-input>
+    </ion-card>
+
+    <ion-button expand="full" (click)="agregarTarea()" class="custom-button">Agregar Tarea</ion-button>
+
+    <ion-list style="background-color: #ffd1dc;">  
+      <ion-item  class="shadow-item"   *ngFor="let tarea of tareas; let i = index">
+        <ion-label class="label-custom">{{ tarea.nombre }}</ion-label>
+        <ion-button slot="end" (click)="eliminarTarea(i)" class="fuchsia-button">Eliminar</ion-button>
+      </ion-item>
+      </ion-list>
+    
+  </div>
+</ion-content>
+
+

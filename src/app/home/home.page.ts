@@ -8,6 +8,7 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
+ 
 
   nombre: string = "";
   apellido: string = "";
@@ -29,7 +30,10 @@ export class HomePage implements OnInit {
     });
   }
 
-  ngOnInit() {}
+ ngOnInit() {
+  
+    
+  }
 
   clearInput(inputName: string) {
     (this as any)[inputName] = '';

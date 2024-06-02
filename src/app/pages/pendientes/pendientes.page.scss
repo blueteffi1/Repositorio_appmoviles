@@ -1,0 +1,42 @@
+.toolbar-custom {
+    --background: rgb(247, 228, 235);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+
+
+
+  .custom-button {
+    --background: #f74a89; 
+    --color: white; 
+  }
+  
+  .content-background {
+    --background: #ffd1dc;
+  }
+  
+  .content-container {
+    padding: 16px;
+  }
+  
+  .custom-item {
+    box-shadow: 0 4px 8px rgba(11, 11, 11, 0.3);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: rgba(248, 5, 78, 0.5); 
+    --color: #0c0c0c;
+    height: 50px;
+    display: flex;   
+    align-items: center; 
+    font-size: 0.9rem; 
+    
+     
+  }
+  
+  
+  
+  .custom-label {
+    color: rgb(9, 9, 9); 
+    
+  }
+  

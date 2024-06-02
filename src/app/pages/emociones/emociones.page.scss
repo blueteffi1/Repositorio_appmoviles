@@ -1,0 +1,30 @@
+.toolbar-custom {
+    --background: rgb(247, 228, 235);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Ajusta según tus preferencias */
+  }
+
+  .container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f6cfde;
+  }
+  .description {
+    color: #e75480; /* Color rosado más oscuro para la descripción */
+    text-align: center;
+  }
+  .image-container {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  
+  
+  .custom-button {
+    --background: #da77a9; 
+    margin-top: 20px;
+  }
+  

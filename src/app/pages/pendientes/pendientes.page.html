@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar-custom" style="margin-top: 0">
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false" style="color: rgb(223, 123, 165);"></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="color: rgb(223, 123, 165);">
+      <ion-icon name="heart"></ion-icon>~ Lista de Tareas ~<ion-icon name="heart"></ion-icon>
+    </ion-title>  
+  </ion-toolbar> 
+</ion-header>
+
+<ion-content class="content-background" [fullscreen]="true">
+  <div class="content-container">
+    <ion-list class="animated-list" style="background-color: #ffd1dc;" lines="full">
+      <ion-card  *ngFor="let tarea of tareas" class="custom-item">
+        <ion-checkbox [(ngModel)]="tarea.completada" class="custom-checkbox"></ion-checkbox>
+        <ion-label class="custom-label">{{ tarea.nombre }}</ion-label>
+      </ion-card>
+    </ion-list>
+    <ion-button shape="round" expand="block" routerLink="/detalles" class="custom-button">Ver Detalles</ion-button>
+  </div>
+</ion-content>

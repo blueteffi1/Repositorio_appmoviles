@@ -1,0 +1,61 @@
+.toolbar-custom {
+    --background: rgb(247, 228, 235);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+  }
+
+
+ion-content {
+  --background: #ffd1dc; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 16px; 
+}
+
+
+.container {
+  background: #ffd1dc; 
+  padding: 20px;
+  border-radius: 8px; 
+  width: 100%;
+  max-width: 500px; 
+}
+
+
+.fuchsia-button {
+  --background: #f64a78; 
+  --background-activated: #861650; 
+  --background-focused: #861650; 
+  --background-hover: #861650; 
+  --color: #ffffff; 
+
+  
+
+}
+
+.custom-button{
+  --background: #f64a78; 
+  --background-activated: #861650; 
+  --background-focused: #861650; 
+  --background-hover: #861650; 
+  --color: #ffffff;  
+}
+
+
+
+.shadow-item {
+  --ion-item-box-shadow: 0 4px 8px rgba(11, 11, 11, 0.3);
+  --ion-item-background:  rgba(248, 5, 78, 0.5);;
+
+   
+}
+
+
+.custom-item{
+  --color: #f3f1f1;
+  background: rgba(248, 5, 78, 0.5); 
+}
+
+
+

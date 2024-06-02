@@ -1,27 +1,56 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
+  <div class="login-header ion-padding">
+    <video class="logo-video" autoplay loop muted>
+      <source src="assets/icon/Grabación 2024-05-27 153641.mp4" type="video/mp4">     
+    </video>
+    
+  </div>
 </ion-header>
 
-<ion-content class="ion-padding login-content">
-  <div class="login-container">
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Iniciar Sesión</ion-card-title>
-      </ion-card-header>
 
-      <ion-card-content>
-        <ion-item>
-          <ion-label position="stacked">Usuario</ion-label>
-          <ion-input [(ngModel)]="username" type="text" required></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="stacked">Contraseña</ion-label>
-          <ion-input [(ngModel)]="password" type="password" inputmode="numeric" required></ion-input>
-        </ion-item>
-        <ion-button expand="block" (click)="login()">Ingresar</ion-button>
-      </ion-card-content>
-    </ion-card>
+<ion-content class="ion-padding login-content" [fullscreen]="true">
+  <div class="login-container">
+    <ion-card-header>
+      <ion-card-title>Iniciar Sesión</ion-card-title>
+    </ion-card-header>
+    <div class="login-form">
+      <div class="form-field">
+        <ion-label>
+          <ion-icon name="person" slot="start"></ion-icon> 
+          Usuario
+        </ion-label>
+        <ion-input [(ngModel)]="username" type="text" required></ion-input>
+      </div>
+      <div class="form-field">
+        <ion-label>
+          <ion-icon name="lock-closed" slot="start"></ion-icon> 
+          Contraseña
+        </ion-label>
+        <ion-input [(ngModel)]="password" type="password" inputmode="numeric" required></ion-input>
+      </div>
+      <ion-button class="pink-button" shape="round" expand="block" (click)="login()">Ingresar</ion-button>
+    </div>
   </div>
 </ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
