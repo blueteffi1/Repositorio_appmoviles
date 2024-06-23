@@ -15,7 +15,7 @@ ion-content {
 
 
 .container {
-  background: #ffd1dc; 
+  
   padding: 20px;
   border-radius: 8px; 
   width: 100%;
@@ -57,5 +57,9 @@ ion-content {
   background: rgba(248, 5, 78, 0.5); 
 }
 
-
+.background-custom{
+  --background: url(/assets/9353819.jpg) center/cover no-repeat fixed;
+  background: var(--background);
+  height: 100vh; 
+}
 

@@ -1,0 +1,36 @@
+
+.toolbar-custom {
+    --background: rgb(247, 228, 235);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+    color: rgb(223, 123, 165); 
+  }
+  .content-background {
+    --background: url(/assets/9353819.jpg) center/cover no-repeat fixed;
+    background: var(--background);
+    height: 100vh; 
+  }
+
+  ion-title {
+    color: rgb(223, 123, 165); 
+    font-size: 1.5rem; 
+  }
+  
+  ion-card {
+    background-color: #fff; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    
+  }
+  
+  ion-item {
+    --background: #fff; 
+    --placeholder-color: rgb(223, 123, 165); 
+    color: black;
+  }
+  
+  ion-button {
+    --background: rgb(223, 123, 165); 
+    --border-radius: 25px; 
+    color: #fff; 
+  }
+  

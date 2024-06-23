@@ -4,6 +4,9 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { PendientesPage } from './pendientes.page';
+import { MiComponenteComponent } from '../../componentes/mi-componente/mi-componente.component';
+
+
 
 @NgModule({
   imports: [

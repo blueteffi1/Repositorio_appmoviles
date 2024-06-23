@@ -7,23 +7,27 @@
 
 
   .custom-button {
-    --background: #f74a89; 
-    --color: white; 
+    --background: #efe7ea; 
+    --color: rgb(0, 0, 0); 
   }
   
   .content-background {
-    --background: #ffd1dc;
+    --background: url(/assets/9353819.jpg) center/cover no-repeat fixed;
+    background: var(--background);
+    height: 100vh; 
+  
   }
   
   .content-container {
     padding: 16px;
+   
   }
   
   .custom-item {
     box-shadow: 0 4px 8px rgba(11, 11, 11, 0.3);
     border-radius: 8px;
     margin-bottom: 10px;
-    background: rgba(248, 5, 78, 0.5); 
+    background: rgba(239, 171, 192, 0.8); 
     --color: #0c0c0c;
     height: 50px;
     display: flex;   
@@ -40,3 +44,10 @@
     
   }
   
+  .animated-list{
+    background-color: rgba(239, 112, 141, 0.4);
+    color: #000000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 10px; 
+    border-radius: 30px;
+  }

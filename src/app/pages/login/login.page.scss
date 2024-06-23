@@ -3,27 +3,34 @@
 }
 
 .login-content {
-  --background: #f6cfde; 
+  
+    --background: url(/assets/9353819.jpg) center/cover no-repeat fixed;
+    background: var(--background);
+    height: 100vh; 
+  
 }
 
 .login-container {
   width: 90%; 
-  margin: 40px auto 10px; /* Margen superior e inferior y centrado horizontal */
+  margin: 40px auto 10px; 
   padding: 20px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
-  position: fixed; /* Fijar la posición del contenedor */
-  top: 190px; /* Ajustar la distancia desde la parte superior de la ventana */
-  left: 0; /* Alinear el contenedor a la izquierda */
-  right: 0; /* Alinear el contenedor a la derecha */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+  position: fixed; 
+  margin-top: 10px;
+  left: 0; 
+  right: 0; 
+  border-radius: 30px;
+  background: linear-gradient(to bottom right, rgba(255, 204, 219, 0.8), rgba(234, 141, 161, 0.1));
 }
 
 
 
 ion-input {
-  --background: rgba(255, 255, 255, 0.5); /* Fondo más transparente */
-  color: #000000; /* Color del texto */
+  background-color: rgba(239, 112, 141, 0.4);
+  color: #000000; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
-  margin-bottom: 10px; /* Separación entre cada ion-input */
+  margin-bottom: 10px; 
+  border-radius: 15px;
 
 }
 
@@ -35,10 +42,24 @@ ion-input input {
 }
 
 .pink-button {
-  --background: #ff69b4; 
-  margin-top: 20px;
+  --background: #f3dfe9; 
+  margin-top: 20px; 
+  border: 2px solid #ff69b4; 
+  border-radius: 20px; 
+  color: #ff69b4; 
+  font-weight: bold; 
   
 }
+
+.reg-button{
+  --background: #f3dfe9; 
+  margin-top: 170px; 
+  border: 2px solid #7db8e9; 
+  border-radius: 20px; 
+  color: #7db8e9; 
+  font-weight: bold;
+}
+
 
 .form-field ion-label {
   font-size: 1.2em; 

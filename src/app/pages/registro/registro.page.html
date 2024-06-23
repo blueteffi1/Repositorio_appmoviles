@@ -1,0 +1,38 @@
+<ion-header [translucent]="true"></ion-header>
+<ion-toolbar class="toolbar-custom" style="margin-top: 0">
+
+  <ion-title style="color: rgb(223, 123, 165);">
+    <ion-icon name="heart"></ion-icon>~ Registro de Usuario ~<ion-icon name="heart"></ion-icon>
+  </ion-title>  
+</ion-toolbar>
+
+<ion-content class="content-background">
+  <div class="reg-container">
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Apellido</ion-label>
+      <ion-input type="text" [(ngModel)]="apellido"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input type="text" [(ngModel)]="usuario"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button class="reg-button" shape="round" expand="full" (click)="guardarDatos()">Registrarse</ion-button>
+  <ion-button class="pink-button" shape="round" expand="block" (click)="login()">Ingresar</ion-button>
+
+</div>
+</ion-content>
+

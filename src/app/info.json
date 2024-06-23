@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Esteffany",
+      "email": "esteffany@gmail.com"
+    },
+    {
+      "id": "2",
+      "name": "Dario Alberto",
+      "email": "dmt@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "Emma Mansila",
+      "email": "ponmi@gmail.com"
+    }
+  ],
+  "posts": [
+    {
+      "id": "3b50",
+      "title": "buenos dias",
+      "body": "asasas",
+      "userId": "1"
+    },
+    {
+      "id": "b118",
+      "title": "Trabajo",
+      "body": "Presentación",
+      "userId": "1"
+    }
+  ]
+}

@@ -7,10 +7,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
-
-
-
 import { HomePageRoutingModule } from './home-routing.module';
+import { MiComponenteComponent } from '../componentes/mi-componente/mi-componente.component';
+
+
+
+
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { HomePageRoutingModule } from './home-routing.module';
     MatDatepickerModule,
     MatNativeDateModule,
     MatFormFieldModule,
+    
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, MiComponenteComponent]
 })
 export class HomePageModule {}

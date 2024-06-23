@@ -13,7 +13,9 @@ import { EdicionPage } from './edicion.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    EdicionPageRoutingModule
+    EdicionPageRoutingModule,
+    
+    
   ],
   declarations: [EdicionPage]
 })

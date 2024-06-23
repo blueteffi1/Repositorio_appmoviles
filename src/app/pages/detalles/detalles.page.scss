@@ -1,6 +1,6 @@
 .toolbar-custom {
     --background: rgb(247, 228, 235);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Ajusta según tus preferencias */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
   }
 
 
@@ -9,14 +9,13 @@
   box-shadow: 0 4px 8px rgba(11, 11, 11, 0.3);
   border-radius: 8px;
   margin-bottom: 10px;
-  background: rgba(248, 5, 78, 0.5); 
+  background: rgba(239, 171, 192, 0.8); 
   --color: #0c0c0c;
   height: 50px;
   display: flex;   
   align-items: center; 
-  font-size: 0.9rem;
-  justify-content: center; 
-  align-items: center; 
+  font-size: 0.9rem; 
+  
   
  }
   
@@ -29,9 +28,18 @@
 
   
   .content-background {
-    --ion-background-color: #f5d5e2; /* Color rosa pastel */
+    --background: url(/assets/9353819.jpg) center/cover no-repeat fixed;
+    background: var(--background);
+    height: 100vh; 
   }
   
+  .custom-list{
+    background-color: rgba(239, 112, 141, 0.4);
+    color: #000000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 10px; 
+    border-radius: 30px;
+  }
 
 
   

@@ -1,7 +1,7 @@
 <ion-header>
   <div class="login-header ion-padding">
     <video class="logo-video" autoplay loop muted>
-      <source src="assets/icon/Grabación 2024-05-27 153641.mp4" type="video/mp4">     
+      <source src="/assets/Grabación 2024-05-27 153641.mp4" type="video/mp4">     
     </video>
     
   </div>
@@ -19,7 +19,7 @@
           <ion-icon name="person" slot="start"></ion-icon> 
           Usuario
         </ion-label>
-        <ion-input [(ngModel)]="username" type="text" required></ion-input>
+        <ion-input [(ngModel)]="usuario" type="text" required></ion-input>
       </div>
       <div class="form-field">
         <ion-label>
@@ -29,6 +29,7 @@
         <ion-input [(ngModel)]="password" type="password" inputmode="numeric" required></ion-input>
       </div>
       <ion-button class="pink-button" shape="round" expand="block" (click)="login()">Ingresar</ion-button>
+      <ion-button class="reg-button" shape="round" expand="block" (click)="crear_cuenta()">¡Registrate!</ion-button>
     </div>
   </div>
 </ion-content>

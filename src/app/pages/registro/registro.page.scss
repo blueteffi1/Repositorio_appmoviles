@@ -1,0 +1,44 @@
+.content-background {
+    --background: url(/assets/patron-pastel-soles-nubes_603843-3328.jpg) center/cover no-repeat fixed;
+    background: var(--background);
+    height: 100vh; 
+  }
+
+  .pink-button {
+    --background: #f3dfe9; 
+    margin-top: 20px; 
+    border: 2px solid #ff69b4; 
+    border-radius: 20px; 
+    color: #ff69b4; 
+    font-weight: bold; 
+    
+  }
+  
+  .reg-button{
+    --background: #f3dfe9; 
+    margin-top: 170px; 
+    border: 2px solid #7db8e9; 
+    border-radius: 20px; 
+    color: #7db8e9; 
+    font-weight: bold;
+  }
+
+
+  .reg-container {
+    width: 90%; 
+    margin: 40px auto 10px; 
+    padding: 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+    position: fixed; 
+    margin-top: 10px;
+    left: 0; 
+    right: 0; 
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, rgba(255, 204, 219, 0.8), rgba(234, 141, 161, 0.1));
+  }
+
+  .toolbar-custom {
+    --background: rgb(247, 228, 235);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+    text-align: center;
+  }

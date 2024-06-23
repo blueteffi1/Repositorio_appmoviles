@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 
 @Component({
@@ -8,42 +7,27 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
- 
+  segmentModel: string = 'opcion1';
+  nombre: string = '';
+  apellido: string = '';
+  nivelEducacion: string = '';
+  fechaNacimiento: string = '';
+  user: string = '';
 
-  nombre: string = "";
-  apellido: string = "";
-  nivelEducacion: string = "";
-  fechaNacimiento: string = "";
+  constructor(private alertController: AlertController) {}
 
-  user: string = "";
-
-  constructor(
-    private router: Router,
-    private route: ActivatedRoute,
-    private alertController: AlertController
-  ) {
-    this.route.queryParams.subscribe(params => {
-      const navigation = this.router.getCurrentNavigation();
-      if (navigation?.extras?.state) {
-        this.user = navigation.extras.state['user'] ?? '';
-      }
-    });
+  ngOnInit() {
+    this.nombre = localStorage.getItem('nombre') || '';
+    this.apellido = localStorage.getItem('apellido') || '';
   }
 
- ngOnInit() {
-  
-    
+  guardardatos() {
+    localStorage.setItem('nombre', this.nombre);
+    localStorage.setItem('apellido', this.apellido);
   }
 
   clearInput(inputName: string) {
     (this as any)[inputName] = '';
-    const inputElement = document.getElementById(inputName);
-    if (inputElement) {
-      inputElement.classList.add('input-animation');
-      setTimeout(() => {
-        inputElement.classList.remove('input-animation');
-      }, 1000);
-    }
   }
 
   async mostrar() {
@@ -54,5 +38,9 @@ export class HomePage implements OnInit {
     });
 
     await alert.present();
+  }
+
+  segmentChanged(event: any) {
+    this.segmentModel = event.detail.value;
   }
 }

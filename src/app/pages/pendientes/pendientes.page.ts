@@ -15,5 +15,9 @@ export class PendientesPage {
 
   marcarComoCompletada(tarea: any) {
     this.tareasService.marcarComoCompletada(tarea);
+    
+    
   }
+
+
 }

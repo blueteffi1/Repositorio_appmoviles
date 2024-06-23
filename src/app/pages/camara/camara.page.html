@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar-custom" style="margin-top: 0">
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false" style="color: rgb(223, 123, 165);"></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="color: rgb(223, 123, 165);">
+      <ion-icon name="heart"></ion-icon> Camara <ion-icon name="heart"></ion-icon>
+    </ion-title>  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content-background">
+  <ion-button class="pink-button" shape="round" expand="block" (click)="takePicture()">Tomar Foto</ion-button>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let photo of photos; let i = index">
+        <ion-card>
+          <img [src]="photo" (click)="openPhoto(photo)" style="width: 100%; height: auto;">
+          <ion-card-content>
+            <ion-button (click)="deletePhoto(i)" color="danger" expand="block">Eliminar</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

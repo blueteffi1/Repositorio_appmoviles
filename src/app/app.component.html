@@ -3,8 +3,8 @@
     <ion-menu contentId="main-content" type="overlay" class="menu-custom">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header>Menú ~</ion-list-header>
-          <ion-note>hi&#64;holamundo.com</ion-note>
+          <ion-list-header>MENÚ ~</ion-list-header>
+          
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
@@ -25,6 +25,7 @@
       </ion-content>
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>
+    
   </ion-split-pane>
 </ion-app>
 

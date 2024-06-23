@@ -12,7 +12,10 @@ export class AppComponent {
     { title: 'Detalles de Tarea', url: 'detalles', icon: 'document' },
     { title: 'Creación/Edición de Tareas', url: 'edicion', icon: 'create' },
     { title: 'Fun', url: 'emociones', icon: 'happy' },
-    { title: 'Cerrar sesiión', url: 'login', icon: 'heart' },
+    { title: 'Api Rest', url: 'apirest', icon: 'heart' },
+    { title: 'Camara', url: 'camara', icon: 'camera-outline'},
+    { title: 'Cerrar sesión', url: 'login', icon: 'heart' },
+    
 
 
   ];

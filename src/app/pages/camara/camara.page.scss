@@ -1,0 +1,20 @@
+.toolbar-custom {
+    --background: rgb(247, 228, 235);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+  }
+
+.content-background {
+    --background: url(/assets/9353819.jpg) center/cover no-repeat fixed;
+    background: var(--background);
+    height: 100vh; 
+  }
+
+  .pink-button {
+    --background: #f3dfe9; 
+    margin-top: 20px; 
+    border: 2px solid #ff69b4; 
+    border-radius: 20px; 
+    color: #ff69b4; 
+    font-weight: bold; 
+    
+  }  

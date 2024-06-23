@@ -28,3 +28,8 @@
     margin-top: 20px;
   }
   
+  .content-background{
+    --background: url(/assets/9353819.jpg) center/cover no-repeat fixed;
+    background: var(--background);
+    height: 100vh; /* Ajusta la altura según sea necesario */
+  }
