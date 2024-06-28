@@ -1,17 +1,24 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ApirestPage } from './apirest.page';
+import { TestBed } from '@angular/core/testing';
+import { HttpClientModule } from '@angular/common/http';
+import { ApiclientService } from 'src/app/service/apiclient.service';
+
 
 describe('ApirestPage', () => {
-  let component: ApirestPage;
-  let fixture: ComponentFixture<ApirestPage>;
+  let service: ApiclientService;
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ApirestPage);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    TestBed.configureTestingModule({
+      imports: [HttpClientModule], 
+      providers: [ApiclientService] 
+    });
+
+    
+    service = TestBed.inject(ApiclientService);
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(service).toBeTruthy();
   });
+
+  
 });

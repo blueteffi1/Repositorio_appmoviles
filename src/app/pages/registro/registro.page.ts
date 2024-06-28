@@ -33,7 +33,7 @@ export class RegistroPage {
     }
 
     
-    this.presentAlert('Registro exitoso');
+    
     this.resetFormulario();
   }
 
